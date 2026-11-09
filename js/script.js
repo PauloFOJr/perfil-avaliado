@@ -64,7 +64,7 @@ $("#demo-form").onsubmit = async e => {
   const { resposta, motivo } = await gerar(texto, nota, tom);
   const o = $("#saida"); o.hidden = false; o.replaceChildren();
   const b = document.createElement("span"); b.className = "badge" + (motivo ? " hold" : "");
-  b.textContent = motivo ? "Iria para a aprovação do dono" : "Seria publicada automaticamente";
+  b.textContent = motivo ? "Iria para a aprovação do dono" : "Resposta pronta para publicar";
   const q = document.createElement("blockquote"); q.textContent = resposta;
   const m = document.createElement("p"); m.className = "mini";
   m.textContent = (motivo ? motivo + " " : "") + "Demonstração com respostas de exemplo.";
