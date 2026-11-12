@@ -5,3 +5,6 @@ details{background:var(--surface);border:1px solid var(--line);border-radius:12p
 .exs{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.exs a{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:10px 18px;text-decoration:none}.exs a:hover{border-color:var(--accent)}
 @media(max-width:820px){.cards3,.svcs,.pks{grid-template-columns:1fr}}
 .dep{margin:0}.dep blockquote{margin:0 0 .6em;font-size:1.05rem}.dep figcaption{color:var(--muted);font-size:.9rem}
+.form fieldset{border:0;padding:0;margin:0 0 24px;display:grid;gap:14px;grid-template-columns:1fr 1fr}.form legend{font:700 1.2rem var(--head);margin-bottom:10px;padding:0}
+.checks2{display:grid;gap:8px}.checks2 label{display:flex;align-items:center;gap:10px;font-weight:400}.checks2 input{width:auto}
+@media(max-width:820px){.form fieldset{grid-template-columns:1fr}}

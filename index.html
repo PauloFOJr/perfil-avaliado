@@ -21,12 +21,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;600&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/secoes.css">
+  <link rel="stylesheet" href="css/design.css">
   <script src="js/tema.js"></script>
 </head>
 <body id="top">
 <header class="nav"><div class="wrap nav-in">
   <a class="brand" href="#top"><span class="logo">★</span><span data-nome>Perfil Avaliado</span></a>
-  <nav aria-label="Principal"><a href="#servicos">Serviços</a><a href="#pacotes">Pacotes</a><a href="#demo">Demonstração</a><a href="#perguntas">Perguntas</a><a href="#contato">Contato</a>
+  <nav aria-label="Principal"><a href="#demo">Demonstração</a><a href="#pacotes">Pacotes</a><a href="#servicos">Serviços</a><a href="#perguntas">Perguntas</a>
+    <a class="btn nav-cta" href="#contato"><span class="m-l">Diagnóstico grátis</span><span class="m-s">Diagnóstico</span></a>
     <button class="icon" id="tema" type="button" aria-label="Alternar modo escuro">🌙</button></nav>
 </div></header>
 
@@ -39,13 +41,19 @@
     <p class="cta"><a class="btn" href="#contato">Pedir diagnóstico grátis</a><a class="btn ghost" href="#servicos">Ver serviços</a></p>
     <ul class="facts"><li><b>Sem fidelidade</b>no plano mensal</li><li><b>Você aprova</b>respostas sensíveis</li><li><b>Daqui</b>Cachoeirinha e região</li></ul>
   </div>
-  <div class="card mock" aria-label="Exemplo de avaliações e respostas">
-    <p class="stars">★★★★★ <span>Maria S.</span></p>
-    <p>“Fui muito bem atendida, recomendo!”</p>
-    <p class="reply"><b>Resposta publicada</b>Que alegria, Maria! Obrigado pelo carinho. Até a próxima!</p>
-    <p class="stars">★★☆☆☆ <span>João P.</span></p>
-    <p>“Demorou mais do que o combinado.”</p>
-    <p class="reply hold"><b>Aguardando a sua aprovação</b>Lamentamos a demora e queremos entender o que aconteceu…</p>
+  <div class="card gp" aria-label="Exemplo ilustrativo de perfil no Google">
+    <p class="ex-tag">Exemplo ilustrativo</p>
+    <div class="gp-head"><div class="gp-ava" aria-hidden="true">B</div><div><h3>Barbearia Exemplo</h3>
+      <p class="gp-rate"><b>4,8</b><span class="stars" role="img" aria-label="4,8 de 5 estrelas">★★★★★</span> (127)</p><p>Barbearia · Cachoeirinha</p></div></div>
+    <div class="gp-btns" aria-hidden="true"><span>Ligar</span><span>Rotas</span><span>Site</span><span>Avaliar</span></div>
+    <div class="gp-rev">
+      <p><span class="stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span><span class="who">Lucas M.</span></p>
+      <p>“Corte impecável e atendimento nota 10.”</p>
+      <p class="reply"><b>Resposta publicada</b>Valeu, Lucas! Esperamos você de novo.</p>
+      <p><span class="stars" role="img" aria-label="2 de 5 estrelas">★★☆☆☆</span><span class="who">Carlos P.</span></p>
+      <p>“Esperei bastante além do horário marcado.”</p>
+      <p class="reply hold"><b>Aguardando a sua aprovação</b>Lamentamos a espera e queremos entender o que aconteceu…</p>
+    </div>
   </div>
 </section>
 
@@ -57,36 +65,6 @@
     <div class="card"><h3>Poucas avaliações</h3><p>Quem tem poucas pode aparecer atrás de concorrentes com mais. Pedir a todo cliente ajuda a mudar isso.</p></div>
     <div class="card"><h3>Perfil e página desatualizados</h3><p>Horário de feriado errado ou nenhum site fazem o cliente desistir antes de chamar.</p></div>
   </div>
-</section>
-
-<section class="wrap sec" id="servicos">
-  <p class="tag">Serviços</p>
-  <h2>O que podemos fazer pelo seu negócio.</h2>
-  <div class="svcs">
-    <div class="card"><h3>Diagnóstico gratuito</h3><p>Um resumo simples do que falta no seu perfil: avaliações sem resposta, site, horários e informações.</p></div>
-    <div class="card"><h3>Respostas às avaliações</h3><p>Em até 48h, no tom do seu negócio. As de nota baixa passam por você antes de ir ao ar.</p></div>
-    <div class="card"><h3>Mais avaliações</h3><p>QR code, link direto e mensagem pronta para o WhatsApp, para pedir a todos os clientes.</p></div>
-    <div class="card"><h3>Cuidado do perfil</h3><p>Fotos, horários de feriado, serviços, descrição e novidades sempre em dia.</p></div>
-    <div class="card"><h3>Site de uma página</h3><p>Serviços, bairro, botão de WhatsApp e botão para avaliar, ligados ao seu perfil.</p></div>
-    <div class="card"><h3>WhatsApp Business</h3><p>Perfil comercial, saudação, respostas rápidas e catálogo configurados do jeito certo.</p></div>
-  </div>
-</section>
-
-<section class="wrap sec" id="pacotes">
-  <p class="tag">Pacotes</p>
-  <h2>Comece pelo que faz sentido para você.</h2>
-  <div class="pks">
-    <div class="card pk"><h3>Presença</h3><p class="big">R$ 497<small>uma vez</small></p>
-      <ul><li>Site de uma página com botão de WhatsApp e de avaliar</li><li>Ajuste inicial do Perfil da Empresa</li><li>QR code e link para pedir avaliação</li></ul>
-      <a class="btn" data-wa href="#contato">Quero este</a></div>
-    <div class="card pk"><h3>Reputação</h3><p class="big">R$ 147<small>/mês</small></p>
-      <ul><li>Respostas às avaliações em até 48h</li><li>Mensagem pronta para pedir avaliação</li><li>Aviso quando chegar avaliação negativa</li><li>Relatório mensal</li></ul>
-      <a class="btn" data-wa href="#contato">Quero este</a></div>
-    <div class="card pk"><h3>Completo</h3><p class="big" style="font-size:1.6rem">A combinar</p>
-      <ul><li>Presença + Reputação</li><li>Cuidado mensal do perfil: fotos, horários e novidades</li></ul>
-      <a class="btn ghost" data-wa href="#contato">Conversar</a></div>
-  </div>
-  <p class="mini">Sem fidelidade no plano mensal. O domínio da página fica no seu nome (em média, cerca de R$ 40 por ano).</p>
 </section>
 
 <section class="wrap sec" id="demo">
@@ -101,6 +79,46 @@
     <button class="btn full" type="submit">Gerar resposta</button>
   </form>
   <div class="card out" id="saida" aria-live="polite" hidden></div>
+</section>
+
+<section class="wrap sec" id="pacotes">
+  <p class="tag">Pacotes</p>
+  <h2>Comece pelo que faz sentido para você.</h2>
+  <div class="pks">
+    <div class="card pk"><h3>Presença</h3><p class="big">R$ 597<small>uma vez</small></p>
+      <ul><li>Site de uma página, entregue em 1 semana</li><li>Ajuste inicial do Perfil da Empresa</li><li>QR code e link para pedir avaliação</li></ul>
+      <a class="btn ghost" data-wa href="#contato">Quero este</a><a class="mini" href="pacotes.html#presenca">Ver detalhes</a></div>
+    <div class="card pk dest"><p class="pk-tag">Produto principal</p><h3>Reputação</h3><p class="big">R$ 147<small>/mês</small></p>
+      <ul><li>Respostas às avaliações em até 48h</li><li>Mensagem pronta para pedir avaliação</li><li>Aviso quando chegar avaliação negativa</li><li>Relatório mensal</li></ul>
+      <a class="btn" data-wa href="#contato">Quero este</a><a class="mini" href="pacotes.html#reputacao">Ver detalhes</a></div>
+    <div class="card pk"><h3>Completo</h3><p class="big">R$ 497<small>uma vez, + R$ 147/mês</small></p>
+      <ul><li>Tudo da Presença e da Reputação</li><li>R$ 100 de desconto na Presença</li></ul>
+      <a class="btn ghost" data-wa href="#contato">Quero este</a><a class="mini" href="pacotes.html#completo">Ver detalhes</a></div>
+  </div>
+  <p class="mini">Sem fidelidade no plano mensal. Os valores são iniciais e podem variar conforme o seu negócio.</p>
+</section>
+
+<section class="wrap sec" id="servicos">
+  <p class="tag">Serviços avulsos</p>
+  <h2>Prefere contratar só uma parte?</h2>
+  <p class="sub">Valores iniciais: o preço final depende do que o seu negócio precisa. Sem fidelidade nos planos mensais.</p>
+  <div class="svcs-wrap">
+    <h3 class="grp">Mensais</h3>
+    <ol class="svc-list">
+      <li><div><h3>Respostas às avaliações</h3><p>Em até 48h, no tom do seu negócio. As de nota baixa passam por você antes de ir ao ar, e você recebe um relatório mensal.</p></div><span class="vlr">R$ 147/mês<small>até 30 avaliações por mês</small></span></li>
+      <li><div><h3>Mais avaliações</h3><p>QR code, link direto e mensagem pronta para o WhatsApp, para pedir a todos os clientes.</p></div><span class="vlr">Incluído<small>no plano Reputação</small></span></li>
+      <li><div><h3>Manutenção do site</h3><p>Pequenas edições e acompanhamento da renovação do domínio.</p></div><span class="vlr">R$ 49/mês</span></li>
+    </ol>
+    <h3 class="grp">Pontuais</h3>
+    <ol class="svc-list">
+      <li><div><h3>Diagnóstico gratuito</h3><p>Um resumo simples do que falta no seu perfil: avaliações sem resposta, site, horários e informações.</p></div><span class="vlr">Grátis</span></li>
+      <li><div><h3>Ajuste inicial do perfil</h3><p>Revisão completa do Perfil da Empresa: categorias, serviços, descrição, horários, fotos e link do site.</p></div><span class="vlr">R$ 197</span></li>
+      <li><div><h3>Site de uma página</h3><p>Serviços, bairro, botão de WhatsApp e botão para avaliar, ligados ao seu perfil. Entrega em 1 semana.</p></div><span class="vlr">a partir de R$ 497<small>com domínio próprio e textos: R$ 797</small></span></li>
+      <li><div><h3>WhatsApp Business</h3><p>Perfil comercial, saudação, respostas rápidas e catálogo configurados do jeito certo.</p></div><span class="vlr">a partir de R$ 147</span></li>
+      <li><div><h3>Criação e verificação do perfil</h3><p>Para quem ainda não tem Perfil da Empresa. A verificação é feita pelo dono, com a nossa orientação.</p></div><span class="vlr">R$ 297</span></li>
+    </ol>
+  </div>
+  <p class="mini">O domínio da página fica no seu nome (em média, cerca de R$ 40 por ano) e não está incluído nos valores. <a href="pacotes.html">Ver o que cada pacote inclui</a>.</p>
 </section>
 
 <section class="wrap sec">
@@ -158,7 +176,7 @@
   <p class="tag">Sobre</p>
   <h2>Quem cuida do seu perfil.</h2>
   <!-- Edite este texto com a sua história, em 2 ou 3 frases -->
-  <p class="sub">Sou o Paulo Jr., desenvolvedor de Cachoeirinha. Faço páginas e cuido da presença no Google de comércios da região.</p>
+  <p class="sub">Sou o Paulo, desenvolvedor de Cachoeirinha. Faço páginas e cuido da presença no Google de comércios da região.</p>
 </section>
 
 <section class="wrap sec" id="contato">
@@ -166,6 +184,7 @@
   <h2>Peça o diagnóstico gratuito do seu perfil.</h2>
   <p class="cta"><a class="btn" data-wa href="#contato">WhatsApp</a><a class="btn ghost" data-email href="#contato">E-mail</a><button class="btn ghost" id="copiar" type="button">Copiar e-mail</button></p>
   <p class="mini" id="email-txt"></p>
+  <p class="mini">Já quer começar? <a href="cadastro.html">Preencha o cadastro do seu negócio</a>.</p>
   <form class="card demo" id="contato-form">
     <label>Nome<input id="c-nome" required></label>
     <label>WhatsApp<input id="c-zap" inputmode="tel" required></label>
@@ -181,6 +200,7 @@
   <p>© <span data-nome>Perfil Avaliado</span> · <a href="privacidade.html">Política de privacidade</a></p>
   <p>Desenvolvido por <a class="dev" href="https://paulojr.dev.br" rel="noopener"><strong>Paulo Jr.</strong></a></p>
 </div></footer>
+<a class="btn wa-fab" data-wa href="#contato" aria-label="Falar no WhatsApp">WhatsApp</a>
 <script src="js/script.js"></script>
 <script src="js/extras.js"></script>
 </body>
