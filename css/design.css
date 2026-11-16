@@ -30,14 +30,13 @@ em{font-style:normal;color:inherit;background:linear-gradient(transparent 62%,rg
 @media(max-width:820px){.svc-list li{grid-template-columns:32px 1fr}.vlr{grid-column:2;text-align:left}.vlr small{margin-left:0}}
 /* pacotes: o card em foco (ou o principal) fica escuro */
 .pk{transition:background-color .2s,border-color .2s,color .2s}.pk .mini{text-align:center}
-.pk.dest{border:2px solid var(--accent)}
-:is(.pk.dest,.pk:hover,.pk:focus-within){background:#14304F;border-color:#14304F;color:#fff}.pk.dest{border-color:var(--accent)}
-:is(.pk.dest,.pk:hover,.pk:focus-within) h3{color:#fff}:is(.pk.dest,.pk:hover,.pk:focus-within) ul{color:rgba(255,255,255,.85)}
-:is(.pk.dest,.pk:hover,.pk:focus-within) .big{color:var(--accent)}:is(.pk.dest,.pk:hover,.pk:focus-within) .big small{color:rgba(255,255,255,.7)}
+:is(.pk:hover,.pk:focus-within){background:#14304F;border-color:#14304F;color:#fff}
+:is(.pk:hover,.pk:focus-within) h3{color:#fff}:is(.pk:hover,.pk:focus-within) ul{color:rgba(255,255,255,.85)}
+:is(.pk:hover,.pk:focus-within) .big{color:var(--accent)}:is(.pk:hover,.pk:focus-within) .big small{color:rgba(255,255,255,.7)}
 :is(.pk:hover,.pk:focus-within) .btn.ghost{background:var(--accent);border-color:var(--accent);color:#14304F}
-:is(.pk.dest,.pk:hover,.pk:focus-within) .mini{color:rgba(255,255,255,.75)}:is(.pk.dest,.pk:hover,.pk:focus-within) .mini{color:rgba(255,255,255,.75)}
-.pk-tag{margin:0;font-size:.8rem;font-weight:600;color:var(--accent)}
-:root[data-theme=dark] :is(.pk.dest,.pk:hover,.pk:focus-within){background:#1B3556}
+:is(.pk:hover,.pk:focus-within) .mini{color:rgba(255,255,255,.75)}:is(.pk:hover,.pk:focus-within) .mini{color:rgba(255,255,255,.75)}
+.pk{position:relative}.pk-tag{position:absolute;top:14px;right:16px;margin:0;font-size:.72rem;font-weight:600;background:var(--accent);color:#14304F;border-radius:999px;padding:2px 10px}
+:root[data-theme=dark] :is(.pk:hover,.pk:focus-within){background:#1B3556}
 /* passos em linha do tempo */
 .steps li{border-top:2px solid var(--line);padding-top:26px;position:relative}
 .steps li::before{position:absolute;top:-13px;left:0;background:var(--accent);color:#14304F;border-radius:999px;padding:2px 12px;font-weight:600}
