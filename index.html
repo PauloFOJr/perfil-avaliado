@@ -158,6 +158,41 @@
       </div>
     </section>
 
+    <section class="wrap sec" id="google-mudou">
+      <p class="tag">O Google mudou</p>
+      <h2>Não basta aparecer no mapa. Agora a IA também indica.</h2>
+      <p class="sub">O cliente pergunta ao Google, ao ChatGPT ou ao Gemini "qual a melhor barbearia em Cachoeirinha?" e
+        recebe uma resposta pronta. No Brasil, 52% das pessoas já pedem à IA recomendações de quem contratar (pesquisa
+        Google e Netquest, 2026).</p>
+      <div class="antes-agora">
+        <div class="card">
+          <h3>Antes</h3>
+          <ul>
+            <li>Palavra-chave no nome e na descrição</li>
+            <li>Perfil do Google preenchido</li>
+            <li>Brigar pela posição no Maps</li>
+          </ul>
+        </div>
+        <div class="card agora">
+          <h3>Agora</h3>
+          <ul>
+            <li>Tudo isso, e mais:</li>
+            <li>A IA precisa entender e confiar no seu negócio</li>
+            <li>Respostas claras sobre preço, área e serviços</li>
+            <li>Perfil, site e avaliações contando a mesma história</li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="grp">As 4 frentes que olhamos no diagnóstico grátis</h3>
+      <ol class="frentes">
+        <li><b>SEO local</b>Nome, categorias, descrição, horários e dados iguais em todo lugar.</li>
+        <li><b>GEO</b>As IAs já citam o seu negócio quando alguém pergunta?</li>
+        <li><b>AEO</b>O seu site responde às dúvidas: preços, área atendida e perguntas frequentes.</li>
+        <li><b>Contexto</b>Avaliações recentes e respondidas, fotos reais e site ligado ao perfil.</li>
+      </ol>
+      <p class="cta"><a class="btn" href="#contato">Quero o diagnóstico grátis</a></p>
+    </section>
+
     <section class="wrap sec" id="demo">
       <p class="tag">Demonstração</p>
       <h2>Cole uma avaliação e veja a resposta.</h2>
@@ -208,7 +243,7 @@
             <li>Aviso quando chegar avaliação negativa</li>
             <li>Relatório mensal</li>
           </ul>
-          <a class="btn" data-wa href="#contato">Quero este</a><a class="mini" href="pacotes.html#reputacao">Ver
+          <a class="btn ghost" data-wa href="#contato">Quero este</a><a class="mini" href="pacotes.html#reputacao">Ver
             detalhes</a>
         </div>
         <div class="card pk">
@@ -360,6 +395,7 @@
       <p class="tag">Perguntas frequentes</p>
       <h2>O que costumam perguntar.</h2>
       <details>
+      
         <summary>Já tenho Instagram. Preciso disso?</summary>
         <p>Continue com ele. O Instagram mostra o negócio a quem já te segue, e o Google atende quem está procurando.
           Podemos colocar o link do seu Instagram na página.</p>
@@ -396,6 +432,38 @@
         da região.</p>
     </section>
 
+      <section class="wrap sec" id="raio-x">
+          <p class="tag">Raio-X grátis</p>
+          <h2>Seu perfil está pronto para o Google e as IAs?</h2>
+          <p class="sub">Responda 10 perguntas de sim ou não e veja sua nota em 1 minuto.</p>
+          <form class="card quiz" id="quiz">
+            <fieldset data-f="SEO">
+              <legend>Perfil (SEO)</legend>
+              <p>A categoria principal do seu perfil está certa e você tem pelo menos 2 categorias secundárias?</p>
+              <p>Horário, telefone e área de atendimento estão atualizados, incluindo feriados?</p>
+              <p>Você colocou foto nova no perfil nos últimos 30 dias?</p>
+            </fieldset>
+            <fieldset data-f="Reputação">
+              <legend>Reputação e coerência</legend>
+              <p>Você tem mais de 20 avaliações no Google?</p>
+              <p>Recebeu alguma avaliação nova nos últimos 3 meses?</p>
+              <p>Você responde todas as avaliações, inclusive as ruins?</p>
+              <p>Nome, telefone e endereço são iguais no Google, Instagram, WhatsApp e site?</p>
+            </fieldset>
+            <fieldset data-f="Dúvidas">
+              <legend>Responde dúvidas (AEO)</legend>
+              <p>Você tem site com preços ou faixas de preço e as cidades que atende?</p>
+              <p>O site ou o perfil responde as perguntas que os clientes mais fazem?</p>
+            </fieldset>
+            <fieldset data-f="IAs">
+              <legend>Inteligência artificial (GEO)</legend>
+              <p>Ao perguntar ao ChatGPT ou Gemini "melhor [seu serviço] em [sua cidade]", sua empresa aparece?</p>
+            </fieldset>
+            <button class="btn full" type="submit">Ver minha nota</button>
+            <div id="quiz-res" class="full" hidden aria-live="polite"></div>
+          </form>
+        </section>
+
     <section class="wrap sec" id="contato">
       <p class="tag">Contato</p>
       <h2>Peça o diagnóstico gratuito do seu perfil.</h2>
@@ -424,6 +492,8 @@
   <a class="btn wa-fab" data-wa href="#contato" aria-label="Falar no WhatsApp">WhatsApp</a>
   <script src="js/script.js"></script>
   <script src="js/extras.js"></script>
+  <script src="js/quiz.js"> </script>
+  
 </body>
 
 </html>
