@@ -331,3 +331,87 @@ details p {
         align-items: flex-start
     }
 }
+
+/* Raio-X: painel do resultado */
+#quiz-res .painel {
+    display: grid;
+    grid-template-columns: minmax(200px, 260px) 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1rem
+}
+
+#quiz-res .geral {
+    text-align: center
+}
+
+#quiz-res .gauge {
+    width: 100%;
+    height: auto;
+    color: var(--ink)
+}
+
+#quiz-res .ponteiro {
+    transform-origin: 100px 100px;
+    transform: rotate(-90deg);
+    transition: transform 1.2s cubic-bezier(.3, 1.4, .5, 1)
+}
+
+#quiz-res.on .ponteiro {
+    transform: rotate(var(--ang))
+}
+
+#quiz-res .nota {
+    display: grid;
+    gap: .2rem;
+    margin: .2rem 0 0
+}
+
+#quiz-res .nota strong {
+    font: 700 2rem var(--head)
+}
+
+#quiz-res .nota span {
+    font-weight: 700
+}
+
+#quiz-res .frentes-nota {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: .8rem
+}
+
+#quiz-res .frentes-nota li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .3rem
+}
+
+#quiz-res .frentes-nota i {
+    grid-column: 1 / -1;
+    height: 8px;
+    border-radius: 4px;
+    background: var(--line);
+    overflow: hidden
+}
+
+#quiz-res .frentes-nota em {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: var(--c);
+    border-radius: 4px;
+    transition: width 1s ease .3s
+}
+
+#quiz-res.on .frentes-nota em {
+    width: var(--w)
+}
+
+@media (max-width: 600px) {
+    #quiz-res .painel {
+        grid-template-columns: 1fr
+    }
+}
